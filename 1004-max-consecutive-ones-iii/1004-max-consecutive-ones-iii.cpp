@@ -17,8 +17,10 @@ public:
                 }
                 l++;
             }
+            if(zeroes<=k){
+                ans=max(ans,r-l+1);
+            }
             r++;
-            ans=max(r-l,ans);
         }
         return ans;
     }
